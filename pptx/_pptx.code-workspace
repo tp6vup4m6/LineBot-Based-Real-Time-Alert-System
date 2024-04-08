@@ -1,0 +1,39 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"python.linting.pylintEnabled": false,
+		"python.linting.pycodestyleEnabled": true,
+		"python.linting.pycodestyleArgs":[
+			"--max-line-length=250"
+		],
+		"python.formatting.provider": "autopep8",
+		"editor.fontSize": 12,
+		"editor.wordWrap": "wordWrapColumn",
+		"editor.wrappingIndent": "same",
+		"editor.wordWrapColumn": 150	,
+		"python.terminal.activateEnvironment": true	
+	},
+	"launch": {
+		"configurations": [
+			{
+				"name": "Python: Current File (Integrated Terminal)",
+				"type": "python",
+				"request": "launch",
+				"program": "${file}",
+				"console": "integratedTerminal"
+			  },
+			  {
+				"name": "Python: Current File (External Terminal)",
+				"type": "python",
+				"request": "launch",
+				"program": "${file}",
+				"console": "externalTerminal"
+			  }			
+		],
+		"compounds": []
+	}
+}
